@@ -1,0 +1,34 @@
+% Setting to headers
+%\setlength\headheight{45pt} 
+%\setlength{\headsep}{1cm}
+
+\firstpageheadrule
+\firstpagefootrule
+\runningheadrule
+\runningfootrule
+
+%\renewcommand{\headrulewidth}{.4pt}
+%\renewcommand{\footrulewidth}{.4pt}
+
+\lhead{%
+    %\fulllogo
+    {\large\color{warnauin}\textbf{\universitas}}\\[0.1cm]
+    {\large\color{warnauin}\textbf{\fakultas}}\\[0.1cm]
+    {\large\color{warnauin}\if\empty\prodi\else{\textbf{\prodi}}\fi}\\[0.1cm]
+    {\small\alamat}\\
+    \vspace{-.31cm}
+}
+\rhead{%
+    \fulllogo\\
+    \vspace{-.31cm}
+}
+\lfoot{%
+    {\small\website}
+}
+\cfoot{}
+\rfoot{%
+    Halaman \thepage~dari \numpages%
+}
+\newcommand{\draftstyle}{%
+    \thispagestyle{head}
+}

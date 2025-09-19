@@ -1,0 +1,42 @@
+% Background draft watermark
+\backgroundsetup{
+    scale=0.5,
+    opacity=0.15,
+    angle=0,
+    contents={\shortlogo}
+}
+
+\newcommand{\blankpage}{%
+    \newpage
+    \thispagestyle{empty}%
+    \null
+    \addtocounter{page}{-1}%
+    \newpage%
+}
+
+\newcommand{\insertspace}[1]{
+    \\\noindent
+    \foreach \i in {1,...,#1}{%
+        {\makebox[\textwidth]{}}{\ifnum\i=#1\else{\\}\fi}
+    }%
+}
+
+\newcommand{\insertlines}[1]{%
+
+    \noindent
+    \foreach \i in {1,...,#1}{%
+        {\color{white}aaa}\underline{\makebox[0.98\textwidth]{}}{\ifnum\i=#1\else{\\}\fi}
+    }%
+}
+
+\newcommand{\boxedtext}[1]{%
+    \begin{center}\fbox{%
+        \parbox{0.96\textwidth}{%
+            #1
+        }
+    }\end{center}
+}
+
+\renewcommand{\indent}{
+    \hspace{1cm}
+}
