@@ -10,15 +10,17 @@
 %\renewcommand{\headrulewidth}{.4pt}
 %\renewcommand{\footrulewidth}{.4pt}
 
-\lhead{%
+\rhead{%
     %\fulllogo
-    {\large\color{warnauin}\textbf{\universitas}}\\[0.1cm]
-    {\large\color{warnauin}\textbf{\fakultas}}\\[0.1cm]
-    {\large\color{warnauin}\if\empty\prodi\else{\textbf{\prodi}}\fi}\\[0.1cm]
-    {\small\alamat}\\
+    \begin{flushleft}
+    \hspace{1.5cm}{\large\color{warnauin}\textbf{\universitas}}\\[0.1cm]
+    \hspace{1.5cm}{\large\color{warnauin}\textbf{\fakultas}}\\[0.1cm]
+    \hspace{1.5cm}{\large\color{warnauin}\if\empty\prodi\else{\textbf{\prodi}}\fi}\\[0.1cm]
+    \hspace{1.5cm}{\small\alamat}\\
+    \end{flushleft}
     \vspace{-.31cm}
 }
-\rhead{%
+\lhead{%
     \fulllogo\\
     \vspace{-.31cm}
 }
